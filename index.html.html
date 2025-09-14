@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Venta de Audífonos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fondo 10s infinite alternate;
+    }
+
+    @keyframes fondo {
+      0% { background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc); }
+      100% { background: linear-gradient(135deg, #e63946, #ff6b6b, #f1faee); }
+    }
+
+    .container {
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 400px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      animation: aparecer 1.2s ease-in-out;
+    }
+
+    @keyframes aparecer {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #f1faee;
+    }
+
+    .producto img {
+      width: 250px;
+      border-radius: 15px;
+      transition: transform 0.4s;
+    }
+
+    .producto img:hover {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    .precio {
+      font-size: 24px;
+      margin: 12px 0;
+      color: #ffb703;
+      font-weight: bold;
+    }
+
+    button {
+      background: #e63946;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      margin-top: 10px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #ff6b6b;
+      transform: scale(1.05);
+    }
+
+    .redes {
+      margin-top: 20px;
+    }
+
+    .redes a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: #a8dadc;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .redes a:hover {
+      color: #ffb703;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎧 Audífonos Premium</h1>
+    <div class="producto">
+      <img src="https://vectorseek.com/wp-content/uploads/2023/09/Apple-Airpods-Logo-Vector.jpg" alt="Audífonos">
+      <p class="precio">$500 MXN</p>
+      <p>Sonido de alta fidelidad, diseño moderno y máxima comodidad. ¡Hazlos tuyos hoy mismo!</p>
+      <button onclick="alert('🚀 Gracias por tu compra! Escríbeme en mis redes sociales.')">Comprar</button>
+    </div>
+
+    <div class="redes">
+      <p>📲 Sígueme en mis redes sociales:</p>
+      <a href="https://www.facebook.com/TU_LINK" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/leo_71us?igsh=MWQwemxtcHNxcno2bw==" target="_blank">Instagram</a>
+      <a href=  "https://api.WhatsApp.com/send?phone=7761112739&text=!hola quiero comprar tu producto!" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
